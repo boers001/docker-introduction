@@ -36,4 +36,4 @@
 
 !SUB
 ### VM vs Containers
-![contenaterVsVM](images/07_vm-compare.jpg)
+![contenaterVsVM](images/docker-containers-vms.png)

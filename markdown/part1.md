@@ -8,7 +8,6 @@
   * Almost all steps formatted as code can be executed.
     *  `\` is a line break and can be copied and pasted.
     * `< ... > ` indicates you should replace the value
-* Since the VM includes a local registry cache some steps are slight different for a VM. These steps are prefixed with \[VM\].
 
 
 !SUB
@@ -37,7 +36,7 @@ Run 'docker COMMAND --help' for more information on a command.
 !SUB
 ### Pull an image
 * First we pull a base image. We use ubuntu 14.04 latest as base. See [Ubuntu repo on docker registry](https://registry.hub.docker.com/_/ubuntu/)
-* [VM]: The VM already containers the images.
+
 ```
 docker pull ubuntu
 ```
@@ -45,7 +44,6 @@ docker pull ubuntu
 ```
 docker images
 ```
-* [VM]: You will see many images since all images are pre fetched.
 
 
 !SUB
@@ -55,7 +53,7 @@ docker images
 ```
 docker run ubuntu echo "hello world"
 ```
-* Running the command above creates, starts and exit the ubuntu container. 
+* Running the command above creates, starts and exit the ubuntu container.
 - Observe the output with commands below, remember you can get help by executing `docker help` or `docker help ps`
 ```
 docker ps
@@ -165,7 +163,7 @@ docker run --rm <yourname>/ubuntu cowsay "Hello world"
 ```
 docker run --rm ubuntu cowsay "Hello world"
 ```
-* You can push your change to the docker registry therefore you need to create an own repository. But rememeber it is a bad practice to push manual build binaries into a repository.
+* You can push your change to the docker registry therefore you need to create an own repository. But remember it is a bad practice to push manual build binaries into a repository.
 
 
 !SUB
@@ -178,4 +176,4 @@ docker run -d -p 9000:9000 \
   -v /var/run/docker.sock:/var/run/docker.sock \
   --privileged dockerui/dockerui
 ```
-- Browse to [http://localhost:9000](http://localhost:9000) to see which containers are running, when using docker toolbox on Mac or Windows replace localhost by the ip of the docker machine.
+- Browse to http://AWS-ip:9000 to see which containers are running, when using docker toolbox on Mac or Windows replace localhost by the ip of the docker machine.

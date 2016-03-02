@@ -84,7 +84,7 @@ docker images
 !SUB
 ### Run the image
 * First we have a look of the description of the image. Here you will see two ports are exposed, 80 and 443. We will use port 80 and map it to 8888.
-Start the container as deamon
+Start the container as daemon
 ```
 docker run -d --name myapp -p 8888:80 lab2/webapp
 ```
@@ -121,7 +121,7 @@ docker stop myapp | xargs docker rm
 !SUB
 ### Automated build
 * In Lab 1 we have build a docker container manually. In the first part of the second lab we automated our build using a Dockerfile. The next step is to automate the proces as whole.
-* The docker hub provides automated build. Follow the next steps to autoomate the docker build.
+* The docker hub provides automated build. Follow the next steps to automate the docker build.
 * The next steps will guide you to set up the build.
   * Create a git repo in GitHub or BitBucket, create an account if you don't have
   * Create a dockerhub account if you don't have it yet.

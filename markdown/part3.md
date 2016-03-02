@@ -8,7 +8,7 @@
 - none, no networking
 - bridge, each container has is own
 - joined, containers shares a single networking
-- hosts, use the host netowrking
+- hosts, use the host networking
 
 !SUB
 ### Docker networking topology by Example
@@ -68,7 +68,7 @@ cd simple-docker-cluster
 !SUB
 ### Building a cluster - data store
 - For the data store we use redis, a fast in memory key store.
-- We can build a redis image our selves or use the offical one. An example is available in the redis directory.
+- We can build a redis image our selves or use the official one. An example is available in the redis directory.
 
 ```
 # Search for the offical redis image in the docker registry

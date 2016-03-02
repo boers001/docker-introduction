@@ -11,12 +11,12 @@
 
 !SUB
 ### Environment Introduction
-* We use a VirtualBox VM to setup a common environment.
-* We use Vagrant to automate the setup of the VM
-* The VirtualBox appliance contains
-  * Ubuntu 14.04 Desktop
-  * Tools: Docker, Docker Compose and Git (at least)
-  * User: Vagrant, Password: Vagrant
+* For this workshop we use AWS instances preinstalled with docker
+  and docker-compose.
+* Alternatively you can run all handson on you local
+  * Linux: install docker and docker-compose
+  * Mac/Windows install docker toolbox
+
 
 
 !SUB
@@ -28,7 +28,7 @@
 mkdir docker-introduction
 cd docker-introduction
 ```
-  * Initialize vagrant and download the images when not available locally. 
+  * Initialize vagrant and download the images when not available locally.
 ```
 vagrant init npalm/ubuntu-1404-dev-desktop
 ```
@@ -36,7 +36,7 @@ vagrant init npalm/ubuntu-1404-dev-desktop
 ```
 vagrant up --provider virtualbox
 ```
-* We have now running Ubuntu linux VM running with all the needed packages for the workshop. The default user is vagrant with password vagrant. 
+* We have now running Ubuntu linux VM running with all the needed packages for the workshop. The default user is vagrant with password vagrant.
 
 !SUB
 ### Vagrant basics
